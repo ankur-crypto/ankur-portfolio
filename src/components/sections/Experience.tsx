@@ -1,55 +1,38 @@
+
 "use client";
 
-import {
-  Briefcase,
-  GraduationCap,
-  Rocket,
-} from "lucide-react";
+import { motion } from "framer-motion";
+import { Briefcase, CalendarDays } from "lucide-react";
 
 const experiences = [
   {
-    year: "2024 - Present",
-    title: "Frontend Developer",
-    company: "Personal Projects",
-    icon: Briefcase,
+    company: "National Informatics Centre (NIC)",
+    role: "Frontend Developer Intern",
+    duration: "2025 - Present",
+    location: "Agartala, Tripura",
     description:
-      "Building modern, responsive and scalable web applications using React, Next.js, TypeScript and Material UI.",
-    skills: [
+      "Developing modern government web applications using React, TypeScript and Material UI with responsive layouts and reusable components.",
+    technologies: [
       "React",
-      "Next.js",
       "TypeScript",
       "Material UI",
-    ],
-  },
-
-  {
-    year: "2024",
-    title: "Bachelor of Technology",
-    company: "Tripura University",
-    icon: GraduationCap,
-    description:
-      "Completed B.Tech while strengthening programming, software engineering and frontend development skills.",
-    skills: [
-      "Java",
-      "DBMS",
-      "Operating Systems",
-      "Computer Networks",
-    ],
-  },
-
-  {
-    year: "Continuous Learning",
-    title: "Learning Journey",
-    company: "Self Learning",
-    icon: Rocket,
-    description:
-      "Continuously improving frontend architecture, backend development, Git, APIs and problem-solving skills through projects.",
-    skills: [
-      "Git",
-      "GitHub",
       "REST API",
-      "Node.js",
-      "Problem Solving",
+      "Git",
+    ],
+  },
+
+  {
+    company: "Personal Projects",
+    role: "Frontend Developer",
+    duration: "2024 - Present",
+    location: "Remote",
+    description:
+      "Building premium web applications including Portfolio, Election Management System and Contractor Registration System using modern frontend technologies.",
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React",
     ],
   },
 ];
@@ -58,165 +41,256 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-[#050816] py-24 text-white"
+      className="relative overflow-hidden bg-slate-50 py-28 transition-colors duration-300 dark:bg-[#050816]"
     >
-      <div className="mx-auto max-w-7xl px-6">
+      {/* Background Glow */}
+
+      <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-violet-600/10 blur-[140px]" />
+
+      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[140px]" />
+
+      <div className="relative mx-auto max-w-6xl px-6">
 
         {/* Heading */}
 
-        <div className="mb-20 text-center">
-
-          <span className="inline-block rounded-full border border-violet-500/20 bg-violet-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-20 text-center"
+        >
+          <span className="inline-block rounded-full border border-violet-500/20 bg-violet-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-violet-500">
             Experience
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold md:text-5xl">
-            My Journey
+          <h2 className="mt-6 text-5xl font-extrabold text-gray-900 dark:text-white">
+            My Professional Journey
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-            My education, learning journey and frontend development
-            experience that shaped my skills.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-400">
+            My experience in frontend development, building responsive web
+            applications and continuously learning modern technologies.
           </p>
-
-        </div>
+        </motion.div>
 
         {/* Timeline */}
+        <div className="relative mx-auto max-w-4xl">
 
-        <div className="relative">
+  {/* Timeline Line */}
 
-          {/* Vertical Line */}
+  <div className="absolute left-5 top-0 h-full w-1 rounded-full bg-gradient-to-b from-violet-500 via-cyan-500 to-violet-500 md:left-1/2 md:-translate-x-1/2" />
 
-          <div className="absolute left-6 top-0 h-full w-1 rounded-full bg-gradient-to-b from-violet-600 via-cyan-500 to-pink-500"></div>
+  <div className="space-y-16">
 
-          <div className="space-y-12">
-                      {experiences.map((item, index) => {
-            const Icon = item.icon;
+    {experiences.map((experience, index) => (
 
-            return (
-              <div
-                key={index}
-                className="relative flex gap-8"
-              >
-                {/* Timeline Icon */}
+      <motion.div
+        key={experience.company}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.6,
+          delay: index * 0.2,
+        }}
+        viewport={{ once: true }}
+        className={`relative flex ${
+          index % 2 === 0
+            ? "md:justify-start"
+            : "md:justify-end"
+        }`}
+      >
 
-                <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 shadow-lg shadow-violet-500/30">
+        {/* Timeline Dot */}
 
-                  <Icon size={26} className="text-white" />
+        <div
+          className="
+            absolute
+            left-5
+            top-8
+            z-10
+            flex
+            h-10
+            w-10
+            -translate-x-1/2
+            items-center
+            justify-center
+            rounded-full
+            bg-gradient-to-r
+            from-violet-600
+            to-cyan-500
+            text-white
+            shadow-lg
+            md:left-1/2
+          "
+        >
+          <Briefcase size={18} />
+        </div>
 
-                </div>
+        {/* Card */}
 
-                {/* Card */}
+        <motion.div
+          whileHover={{
+            y: -6,
+            scale: 1.01,
+          }}
+          className="
+            ml-16
+            w-full
+            rounded-3xl
+            border
+            border-gray-200
+            bg-white
+            p-8
+            shadow-lg
+            transition-all
+            duration-300
+            hover:shadow-2xl
+            dark:border-white/10
+            dark:bg-white/5
+            dark:shadow-none
+            dark:hover:border-violet-500
+            md:ml-0
+            md:w-[45%]
+          "
+        >
 
-                <div className="flex-1 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-violet-500 hover:shadow-[0_0_35px_rgba(139,92,246,.25)]">
+          {/* Role */}
 
-                  {/* Year */}
-
-                  <span className="inline-block rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm font-semibold text-violet-300">
-                    {item.year}
-                  </span>
-
-                  {/* Title */}
-
-                  <h3 className="mt-5 text-3xl font-bold text-white">
-                    {item.title}
-                  </h3>
-
-                  {/* Company */}
-
-                  <p className="mt-2 text-lg font-medium text-cyan-400">
-                    {item.company}
-                  </p>
-
-                  {/* Description */}
-
-                  <p className="mt-6 leading-8 text-gray-400">
-                    {item.description}
-                  </p>
-
-                  {/* Skills */}
-
-                  <div className="mt-8 flex flex-wrap gap-3">
-
-                    {item.skills.map((skill) => (
-
-                      <span
-                        key={skill}
-                        className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-300 transition-all duration-300 hover:scale-105 hover:border-violet-500"
-                      >
-                        {skill}
-                      </span>
-
-                    ))}
-
-                  </div>
-
-                </div>
-
-              </div>
-            );
-          })}
-                  </div>
-
-        {/* Bottom Section */}
-
-        <div className="mt-20 rounded-3xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur-xl">
-
-          <h3 className="text-3xl font-bold text-white">
-            Always Learning & Growing 🚀
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+            {experience.role}
           </h3>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-            I believe learning never stops. Every project helps me improve my
-            frontend development skills, write cleaner code and build better
-            user experiences with modern technologies.
+          {/* Company */}
+
+          <p className="mt-2 text-lg font-semibold text-violet-500">
+            {experience.company}
           </p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {/* Duration */}
 
-            <div className="rounded-2xl border border-white/10 bg-[#111827]/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500">
+          <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
 
-              <h4 className="text-4xl font-bold text-violet-400">
-                7+
-              </h4>
+            <div className="flex items-center gap-2">
 
-              <p className="mt-3 text-gray-400">
-                Projects Completed
-              </p>
+              <CalendarDays size={16} />
+
+              {experience.duration}
 
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-[#111827]/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500">
+            <span>•</span>
 
-              <h4 className="text-4xl font-bold text-cyan-400">
-                12+
-              </h4>
-
-              <p className="mt-3 text-gray-400">
-                Technologies Learned
-              </p>
-
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-[#111827]/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500">
-
-              <h4 className="text-4xl font-bold text-pink-400">
-                100%
-              </h4>
-
-              <p className="mt-3 text-gray-400">
-                Passion for Development
-              </p>
-
-            </div>
+            <span>{experience.location}</span>
 
           </div>
 
-        </div>
+          {/* Description */}
+
+          <p className="mt-6 leading-7 text-gray-600 dark:text-gray-400">
+            {experience.description}
+          </p>
+
+          {/* Technologies */}
+
+          <div className="mt-6 flex flex-wrap gap-2">
+
+            {experience.technologies.map((tech) => (
+
+              <span
+                key={tech}
+                className="
+                  rounded-full
+                  border
+                  border-violet-500/20
+                  bg-violet-500/10
+                  px-3
+                  py-1
+                  text-xs
+                  font-semibold
+                  text-violet-600
+                  transition
+                  hover:scale-105
+                  dark:text-violet-300
+                "
+              >
+                {tech}
+              </span>
+
+            ))}
+
+          </div>
+
+        </motion.div>
+
+      </motion.div>
+
+    ))}
+
+  </div>
+
+</div>
+        {/* Bottom CTA */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="
+            mt-20
+            rounded-3xl
+            border
+            border-gray-200
+            bg-white
+            p-10
+            text-center
+            shadow-lg
+            transition-all
+            duration-300
+            dark:border-white/10
+            dark:bg-white/5
+            dark:shadow-none
+          "
+        >
+          <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Looking for New Opportunities 🚀
+          </h3>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
+            I'm passionate about building scalable, user-friendly web
+            applications using modern frontend technologies. I'm always eager
+            to learn, collaborate with talented teams, and contribute to
+            impactful projects.
+          </p>
+
+          <a
+            href="#contact"
+            className="
+              mt-8
+              inline-flex
+              items-center
+              gap-3
+              rounded-full
+              bg-gradient-to-r
+              from-violet-600
+              to-cyan-500
+              px-8
+              py-4
+              font-semibold
+              text-white
+              shadow-lg
+              transition-all
+              duration-300
+              hover:scale-105
+              hover:shadow-violet-500/30
+            "
+          >
+            Let's Connect
+          </a>
+        </motion.div>
 
       </div>
-      </div>
-
     </section>
   );
 }
