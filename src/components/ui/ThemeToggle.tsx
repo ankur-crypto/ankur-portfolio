@@ -1,15 +1,24 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
-  // Wait until theme is available
-  if (!resolvedTheme) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
     return (
-      <div className="h-11 w-11 rounded-full border border-gray-300 dark:border-white/10" />
+      <button
+        aria-label="Toggle Theme"
+        className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-300 bg-white shadow-md dark:border-white/10 dark:bg-white/10"
+      />
     );
   }
 

@@ -35,6 +35,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import ThemeProvider from "@/components/providers/ThemeProvider";
+import LoadingScreen from "@/components/ui/LoadingScreen";
 
 import "./globals.css";
 
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
 
   creator: "Ankur Chakraborty",
 
-  metadataBase: new URL("https://ankurportfolio.vercel.app"),
+  metadataBase: new URL("https://ankur-portfolio-five.vercel.app"),
 
   openGraph: {
     title: "Ankur Chakraborty | Frontend Developer",
@@ -97,8 +98,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="bg-white text-gray-900 antialiased dark:bg-[#050816] dark:text-white">
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="min-h-full bg-white text-gray-900 antialiased dark:bg-[#050816] dark:text-white">
+        <ThemeProvider>
+          <LoadingScreen />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
