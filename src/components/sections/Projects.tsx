@@ -314,7 +314,7 @@ export default function Projects() {
           </p>
 
           <Link
-            href="https://github.com/YOUR_GITHUB_USERNAME"
+            href="https://github.com/ankur-crypto"
             target="_blank"
             className="
               mt-8
