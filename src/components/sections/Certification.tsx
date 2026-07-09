@@ -13,7 +13,7 @@ const certifications = [
     date: "2022",
     description:
       "Completed a comprehensive React course covering Hooks, Routing, State Management and modern React development.",
-    link: "#",
+    link: "https://drive.google.com/file/d/16jhnQRvHKDNjq2WK8-wskbUI4IiDuhSq/view?usp=drive_link",
   },
   {
     title: "Mern Stack",
@@ -21,7 +21,15 @@ const certifications = [
     date: "2023",
     description:
       "Learned TypeScript fundamentals, interfaces, generics, type safety and best development practices.",
-    link: "#",
+    link: "https://drive.google.com/file/d/1H7IUW3vfvif1YbrTA8DDoThsTFkIrHtX/view?usp=drive_link",
+  },
+   {
+    title: "Badge of participate - BRIDGE Campus Learning Series",
+    issuer: "Ardent Computech pvt.ltd",
+    date: "2024",
+    description:
+      "Learned TypeScript fundamentals, interfaces, generics, type safety and best development practices.",
+    link: "https://drive.google.com/file/d/1f1dSNp089M7De1pd4LdnSfM6NeS26g2b/view?usp=drive_link",
   },
   {
     title: "Web developer",
