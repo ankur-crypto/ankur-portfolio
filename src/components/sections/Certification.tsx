@@ -28,7 +28,7 @@ const certifications = [
     issuer: "Deloitte",
     date: "2024",
     description:
-      "",
+      "It is learning series on Innovation as an everyday equation",
     link: "https://drive.google.com/file/d/1f1dSNp089M7De1pd4LdnSfM6NeS26g2b/view?usp=drive_link",
   },
   {
