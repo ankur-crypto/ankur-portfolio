@@ -119,7 +119,7 @@ export default function GitHubStats() {
       </h3>
 
       <p className="text-gray-600 dark:text-gray-400">
-        @YOUR_GITHUB_USERNAME
+        @ankur-crypto
       </p>
     </div>
 
@@ -145,7 +145,7 @@ export default function GitHubStats() {
   </div>
 
   <Link
-    href="https://github.com/YOUR_GITHUB_USERNAME"
+    href="https://github.com/ankur-crypto"
     target="_blank"
     className="
       mt-8
@@ -205,7 +205,7 @@ export default function GitHubStats() {
   >
 
     <img
-      src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=transparent&hide_border=true"
+      src="https://github-readme-stats-sigma-five.vercel.app/api?username=ankur-crypto&show_icons=true&theme=tokyonight&hide_border=true"
       alt="GitHub Stats"
       className="w-full rounded-2xl"
     />
@@ -235,38 +235,7 @@ export default function GitHubStats() {
   >
 
     <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=transparent&hide_border=true"
-      alt="Top Languages"
-      className="w-full rounded-2xl"
-    />
-
-  </motion.div>
-
-  {/* GitHub Streak */}
-
-  <motion.div
-    whileHover={{ y: -6 }}
-    className="
-      overflow-hidden
-      rounded-3xl
-      border
-      border-gray-200
-      bg-white
-      p-5
-      shadow-lg
-      transition-all
-      duration-300
-      hover:shadow-2xl
-      dark:border-white/10
-      dark:bg-white/5
-      dark:shadow-none
-      dark:hover:border-emerald-500
-    "
-  >
-
-    <img
-      src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=transparent&hide_border=true"
-      alt="GitHub Streak"
+      src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ankur-crypto&layout=compact&theme=tokyonight&hide_border=true"
       className="w-full rounded-2xl"
     />
 

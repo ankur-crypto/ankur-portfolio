@@ -12,7 +12,7 @@ import {
 const achievements = [
   {
     icon: <FolderKanban size={34} />,
-    number: "10+",
+    number: "4+",
     title: "Projects Completed",
     description:
       "Developed responsive and modern web applications using React, Next.js, TypeScript and Tailwind CSS.",
@@ -21,7 +21,7 @@ const achievements = [
 
   {
     icon: <Code2 size={34} />,
-    number: "15+",
+    number: "10+",
     title: "Technologies Learned",
     description:
       "Hands-on experience with modern frontend technologies, frameworks and development tools.",
@@ -30,7 +30,7 @@ const achievements = [
 
   {
     icon: <Award size={34} />,
-    number: "3+",
+    number: "1+",
     title: "Certifications",
     description:
       "Successfully completed professional certifications and online development courses.",

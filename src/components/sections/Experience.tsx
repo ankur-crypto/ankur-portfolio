@@ -6,9 +6,9 @@ import { Briefcase, CalendarDays } from "lucide-react";
 
 const experiences = [
   {
-    company: "National Informatics Centre (NIC)",
-    role: "Frontend Developer Intern",
-    duration: "2025 - Present",
+    company: "SBS Computer Education (systern concern of TATA)",
+    role: "Frontend Developer",
+    duration: "2022 - 24",
     location: "Agartala, Tripura",
     description:
       "Developing modern government web applications using React, TypeScript and Material UI with responsive layouts and reusable components.",
@@ -22,9 +22,9 @@ const experiences = [
   },
 
   {
-    company: "Personal Projects",
+    company: "Freelancer",
     role: "Frontend Developer",
-    duration: "2024 - Present",
+    duration: "2026 - Present",
     location: "Remote",
     description:
       "Building premium web applications including Portfolio, Election Management System and Contractor Registration System using modern frontend technologies.",
