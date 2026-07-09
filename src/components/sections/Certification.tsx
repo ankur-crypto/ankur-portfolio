@@ -12,7 +12,7 @@ const certifications = [
     issuer: "Li-Mat solution pvt.Ltd",
     date: "2022",
     description:
-      "Completed a comprehensive React course covering Hooks, Routing, State Management and modern React development.",
+      "Completed a python guess game using tkinter (module in python)",
     link: "https://drive.google.com/file/d/16jhnQRvHKDNjq2WK8-wskbUI4IiDuhSq/view?usp=drive_link",
   },
   {
@@ -20,15 +20,15 @@ const certifications = [
     issuer: "Ardent Computech pvt.ltd",
     date: "2023",
     description:
-      "Learned TypeScript fundamentals, interfaces, generics, type safety and best development practices.",
+      "Learned Node js , Mongodb, react js express js  fundamentals, interfaces, generics, type safety and best development practices.",
     link: "https://drive.google.com/file/d/1H7IUW3vfvif1YbrTA8DDoThsTFkIrHtX/view?usp=drive_link",
   },
    {
     title: "Badge of participate - BRIDGE Campus Learning Series",
-    issuer: "Ardent Computech pvt.ltd",
+    issuer: "Deloitte",
     date: "2024",
     description:
-      "Learned TypeScript fundamentals, interfaces, generics, type safety and best development practices.",
+      "",
     link: "https://drive.google.com/file/d/1f1dSNp089M7De1pd4LdnSfM6NeS26g2b/view?usp=drive_link",
   },
   {
@@ -37,7 +37,7 @@ const certifications = [
     date: "2024",
     description:
       "Built responsive websites using HTML, CSS and modern UI design principles.",
-    link: "#",
+    link: "https://drive.google.com/file/d/1MWQkLXAFa8QQ8A4H8bHcs9dV13q9yBmf/view?usp=drive_link",
   },
 ];
 

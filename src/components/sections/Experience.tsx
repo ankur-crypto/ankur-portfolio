@@ -27,7 +27,7 @@ const experiences = [
     duration: "2026 - Present",
     location: "Remote",
     description:
-      "Building premium web applications including Portfolio, Election Management System and Contractor Registration System using modern frontend technologies.",
+      "Building premium web applications including Portfolio, Weather Dashboard and Contractor Registration System using modern frontend technologies.",
     technologies: [
       "Next.js",
       "Tailwind CSS",
