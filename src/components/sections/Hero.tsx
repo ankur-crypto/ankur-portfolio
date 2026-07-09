@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Eye } from "lucide-react";
 
 import {
   Mail,
@@ -27,7 +28,7 @@ const techStack = [
 
 const stats = [
   {
-    number: "10+",
+    number: "4+",
     label: "Projects",
   },
   {
@@ -276,31 +277,32 @@ export default function Hero() {
                 <ArrowRight size={18} />
               </Link>
 
-              <a
-                href="/resume.pdf"
-                download
-                className="
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                rounded-full
-                border
-                border-cyan-500/40
-                px-8
-                py-4
-                font-semibold
-                text-cyan-600
-                transition-all
-                duration-300
-                hover:bg-cyan-50
-                dark:text-cyan-300
-                dark:hover:bg-cyan-500/10
-                "
-              >
-                <Download size={18} />
-                Download Resume
-              </a>
+                  <a
+                    href="/resume/ankurportfolio.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      inline-flex
+                      items-center
+                      justify-center
+                      gap-2
+                      rounded-full
+                      border
+                      border-cyan-500/40
+                      px-8
+                      py-4
+                      font-semibold
+                      text-cyan-600
+                      transition-all
+                      duration-300
+                      hover:bg-cyan-50
+                      dark:text-cyan-300
+                      dark:hover:bg-cyan-500/10
+                    "
+                  >
+                    <Eye size={18} />
+                    View Resume
+                  </a>
 
             </div>
 
