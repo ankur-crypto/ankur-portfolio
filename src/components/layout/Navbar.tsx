@@ -106,7 +106,7 @@ export default function Navbar() {
           <ThemeToggle />
 
           <a
-            href="/resume.pdf"
+            href="/resume/ankurportfolio.pdf"
             download
             className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-violet-500/40 md:inline-flex"
           >
@@ -151,7 +151,7 @@ export default function Navbar() {
             })}
 
             <a
-              href="/resume.pdf"
+              href="/resume/ankurportfolio.pdf"
               download
               className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 px-5 py-3 font-semibold text-white transition-all duration-300 hover:scale-[1.02]"
             >
