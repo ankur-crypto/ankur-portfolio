@@ -39,17 +39,17 @@ const projects = [
   },
 
   {
-    title: "Contractor Management System",
+    title: "KANUN dashboard",
     description:
-      "A contractor registration platform with authentication, profile management and document verification built using React and Material UI.",
+      "KANUN is a legal reference portal designed to help users discover offences, relevant sections, Acts, punishments and legal classifications in one place.",
     image: "/projects/contractor.png",
     technologies: [
       "React",
       "TypeScript",
       "Material UI",
     ],
-    github: "https://github.com/YOUR_GITHUB",
-    live: "#",
+    github: "https://github.com/ankur-crypto/KANUN",
+    live: "https://kanun-frontend.onrender.com",
   },
 ];
 
