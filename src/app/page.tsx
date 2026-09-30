@@ -10,7 +10,6 @@ import Projects from "@/components/sections/Projects";
 import Education from "@/components/sections/Education";
 import Experience from "@/components/sections/Experience";
 import Certification from "@/components/sections/Certification";
-import Achievements from "@/components/sections/Achievements";
 import GithubStats from "@/components/sections/GithubStats";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
@@ -31,7 +30,6 @@ export default function Home() {
       <Education />
       <Experience />
       <Certification />
-      <Achievements />
       <GithubStats />
       <Contact />
     </main>

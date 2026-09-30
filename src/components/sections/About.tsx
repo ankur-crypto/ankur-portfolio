@@ -27,7 +27,7 @@ const infoCards = [
   {
     icon: Briefcase,
     title: "Role",
-    value: "Frontend Developer",
+    value: "Web Developer",
   },
   {
     icon: MapPin,
@@ -117,7 +117,7 @@ export default function About() {
             dark:text-gray-400
             "
           >
-            I'm a passionate Frontend Developer who enjoys building
+            I'm a passionate Web Developer who enjoys building
             modern, responsive and beautiful web applications using
             React, Next.js, TypeScript and Tailwind CSS.
           </p>
@@ -155,7 +155,7 @@ export default function About() {
     "
   >
     <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-      Frontend Developer
+      Web Developer
     </h3>
 
     <p className="mt-6 leading-8 text-gray-600 dark:text-gray-400">
@@ -163,7 +163,7 @@ export default function About() {
       <span className="font-semibold text-violet-500">
         {" "}Ankur Chakraborty
       </span>
-      , a passionate Frontend Developer from
+      , a passionate Web Developer from
       <span className="font-semibold">
         {" "}Agartala, Tripura.
       </span>
@@ -171,7 +171,7 @@ export default function About() {
 
     <p className="mt-5 leading-8 text-gray-600 dark:text-gray-400">
       I specialize in creating modern, responsive and user-friendly web
-      applications using React, Next.js, TypeScript and Tailwind CSS.
+      applications using React, Next.js, TypeScript, Vite, Springboot, postgresql, mongodb, mysql, python, java.
     </p>
 
     <p className="mt-5 leading-8 text-gray-600 dark:text-gray-400">
@@ -408,10 +408,16 @@ export default function About() {
     <div className="mt-8 space-y-6">
 
       {[
-        ["React", "95%"],
-        ["Next.js", "90%"],
-        ["TypeScript", "88%"],
-        ["Tailwind CSS", "95%"],
+        ["React", "60%"],
+        ["Next.js", "60%"],
+        ["TypeScript", "60%"],
+        ["Tailwind CSS", "60%"],
+        ["Vite", "60%"],
+        ["Springboot", "60%"],
+        ["Mysql", "60%"],
+        ["postgresql", "60%"],
+        ["mongo db", "60%"],
+        ["Vue", "60%"],
       ].map(([skill, percent]) => (
         <div key={skill}>
           <div className="mb-2 flex justify-between">

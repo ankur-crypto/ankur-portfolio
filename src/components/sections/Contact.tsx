@@ -27,14 +27,12 @@ const contactInfo = [
     value: "chakrabortyankur843@gmail.com",
     href: "mailto:chakrabortyankur843@gmail.com",
   },
-
   {
     icon: <Phone size={24} />,
     title: "Phone",
     value: "+91 7005010311",
     href: "tel:+917005010311",
   },
-
   {
     icon: <MapPin size={24} />,
     title: "Location",
@@ -93,8 +91,8 @@ export default function Contact() {
       );
 
       toast.success(
-  "🎉 Thank you! Your message has been sent successfully."
-);
+        "🎉 Thank you! Your message has been sent successfully."
+      );
 
       setForm({
         name: "",
@@ -106,8 +104,8 @@ export default function Contact() {
       console.error(error);
 
       toast.error(
-  "❌ Something went wrong. Please try again later."
-);
+        "❌ Something went wrong. Please try again later."
+      );
     } finally {
       setLoading(false);
     }
@@ -120,55 +118,152 @@ export default function Contact() {
         relative
         overflow-hidden
         bg-slate-50
-        py-28
+        py-16
         transition-colors
         duration-300
+        sm:py-20
+        lg:py-28
         dark:bg-[#050816]
       "
     >
-      {/* Background Glow */}
+      {/* ===========================
+          Background Glow
+      =========================== */}
 
-      <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-violet-600/10 blur-[140px]" />
+      <div
+        className="
+          absolute
+          left-0
+          top-0
+          h-64
+          w-64
+          rounded-full
+          bg-violet-600/10
+          blur-[100px]
+          sm:h-96
+          sm:w-96
+          sm:blur-[140px]
+        "
+      />
 
-      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[140px]" />
+      <div
+        className="
+          absolute
+          bottom-0
+          right-0
+          h-64
+          w-64
+          rounded-full
+          bg-cyan-500/10
+          blur-[100px]
+          sm:h-96
+          sm:w-96
+          sm:blur-[140px]
+        "
+      />
 
-      <div className="relative mx-auto max-w-7xl px-6">
-
-        {/* Heading */}
+      <div
+        className="
+          relative
+          mx-auto
+          w-full
+          max-w-7xl
+          px-4
+          sm:px-6
+          lg:px-8
+        "
+      >
+        {/* ===========================
+            Heading
+        =========================== */}
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-20 text-center"
+          className="mb-12 text-center sm:mb-16 lg:mb-20"
         >
-          <span className="inline-block rounded-full border border-violet-500/20 bg-violet-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-violet-500">
+          <span
+            className="
+              inline-block
+              rounded-full
+              border
+              border-violet-500/20
+              bg-violet-500/10
+              px-4
+              py-2
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.2em]
+              text-violet-500
+              sm:px-5
+              sm:text-sm
+              sm:tracking-[0.25em]
+            "
+          >
             Contact
           </span>
 
-          <h2 className="mt-6 text-5xl font-extrabold text-gray-900 dark:text-white">
-            Let's Work Together
+          <h2
+            className="
+              mt-5
+              text-4xl
+              font-extrabold
+              leading-tight
+              text-gray-900
+              sm:mt-6
+              sm:text-5xl
+              dark:text-white
+            "
+          >
+            Let&apos;s Work Together
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-400">
+          <p
+            className="
+              mx-auto
+              mt-5
+              max-w-3xl
+              text-base
+              leading-7
+              text-gray-600
+              sm:mt-6
+              sm:text-lg
+              sm:leading-8
+              dark:text-gray-400
+            "
+          >
             Have a project in mind or want to discuss an opportunity?
-            Feel free to reach out. I'd love to hear from you.
+            Feel free to reach out. I&apos;d love to hear from you.
           </p>
         </motion.div>
 
-        {/* Contact Content */}
+        {/* ===========================
+            Contact Content
+        =========================== */}
 
-        <div className="grid gap-12 lg:grid-cols-2">
-
-          {/* Left Side */}
+        <div
+          className="
+            grid
+            min-w-0
+            grid-cols-1
+            gap-10
+            lg:grid-cols-2
+            lg:gap-12
+          "
+        >
+          {/* ===========================
+              Left Side
+          =========================== */}
 
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="min-w-0 space-y-4 sm:space-y-6"
           >
             {contactInfo.map((item) => (
               <a
@@ -176,69 +271,181 @@ export default function Contact() {
                 href={item.href}
                 className="
                   flex
+                  w-full
+                  min-w-0
                   items-center
-                  gap-5
-                  rounded-3xl
+                  gap-3
+                  overflow-hidden
+                  rounded-2xl
                   border
                   border-gray-200
                   bg-white
-                  p-6
+                  p-4
                   shadow-lg
                   transition-all
                   duration-300
                   hover:-translate-y-1
                   hover:shadow-xl
+                  sm:gap-5
+                  sm:rounded-3xl
+                  sm:p-6
                   dark:border-white/10
                   dark:bg-white/5
                   dark:shadow-none
                   dark:hover:border-violet-500
                 "
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 text-white shadow-lg">
+                {/* Icon */}
+
+                <div
+                  className="
+                    flex
+                    h-12
+                    w-12
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-xl
+                    bg-gradient-to-r
+                    from-violet-600
+                    to-cyan-500
+                    text-white
+                    shadow-lg
+                    sm:h-14
+                    sm:w-14
+                    sm:rounded-2xl
+                  "
+                >
                   {item.icon}
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                {/* Text */}
+
+                <div className="min-w-0 flex-1">
+                  <h3
+                    className="
+                      text-base
+                      font-semibold
+                      text-gray-900
+                      sm:text-lg
+                      dark:text-white
+                    "
+                  >
                     {item.title}
                   </h3>
 
-                  <p className="mt-1 text-gray-600 dark:text-gray-400">
+                  <p
+                    className="
+                      mt-1
+                      break-all
+                      text-sm
+                      leading-6
+                      text-gray-600
+                      sm:break-normal
+                      sm:text-base
+                      dark:text-gray-400
+                    "
+                  >
                     {item.value}
                   </p>
                 </div>
               </a>
             ))}
 
-            <div className="pt-8">
-              <h3 className="mb-5 text-2xl font-bold text-gray-900 dark:text-white">
+            {/* ===========================
+                Social Links
+            =========================== */}
+
+            <div className="pt-4 sm:pt-8">
+              <h3
+                className="
+                  mb-4
+                  text-xl
+                  font-bold
+                  text-gray-900
+                  sm:mb-5
+                  sm:text-2xl
+                  dark:text-white
+                "
+              >
                 Connect with me
               </h3>
 
-              <div className="flex gap-4">
+              <div className="flex gap-3 sm:gap-4">
+                {/* GitHub */}
 
                 <a
                   href="https://github.com/ankur-crypto"
                   target="_blank"
-                  className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-lg transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-500 dark:border-white/10 dark:bg-white/5 dark:text-white"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="
+                    flex
+                    h-12
+                    w-12
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-gray-200
+                    bg-white
+                    text-gray-700
+                    shadow-lg
+                    transition-all
+                    duration-300
+                    hover:scale-110
+                    hover:border-violet-500
+                    hover:text-violet-500
+                    sm:h-14
+                    sm:w-14
+                    dark:border-white/10
+                    dark:bg-white/5
+                    dark:text-white
+                  "
                 >
                   <FaGithub size={22} />
                 </a>
 
+                {/* LinkedIn */}
+
                 <a
-                  href="https://www.linkedin.com/in/ankur-chakraborty-777b21197"
+                  href="https://www.linkedin.com/in/ankur-chakraborty-777b21197?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                   target="_blank"
-                  className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-lg transition-all duration-300 hover:scale-110 hover:border-cyan-500 hover:text-cyan-500 dark:border-white/10 dark:bg-white/5 dark:text-white"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="
+                    flex
+                    h-12
+                    w-12
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-gray-200
+                    bg-white
+                    text-gray-700
+                    shadow-lg
+                    transition-all
+                    duration-300
+                    hover:scale-110
+                    hover:border-cyan-500
+                    hover:text-cyan-500
+                    sm:h-14
+                    sm:w-14
+                    dark:border-white/10
+                    dark:bg-white/5
+                    dark:text-white
+                  "
                 >
                   <FaLinkedin size={22} />
                 </a>
-
               </div>
             </div>
-
           </motion.div>
 
-          {/* Right Side */}
+          {/* ===========================
+              Right Side - Contact Form
+          =========================== */}
 
           <motion.form
             onSubmit={handleSubmit}
@@ -247,211 +454,282 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="
-              rounded-3xl
+              min-w-0
+              rounded-2xl
               border
               border-gray-200
               bg-white
-              p-8
+              p-4
               shadow-lg
+              sm:rounded-3xl
+              sm:p-6
+              lg:p-8
               dark:border-white/10
               dark:bg-white/5
               dark:shadow-none
             "
           >
+            <div className="grid min-w-0 gap-5 sm:gap-6">
+              {/* Name */}
 
-            <div className="grid gap-6">
-                          <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className="
-                rounded-xl
-                border
-                border-gray-300
-                bg-transparent
-                px-5
-                py-4
-                outline-none
-                transition
-                focus:border-violet-500
-                dark:border-white/10
-                dark:text-white
-              "
-            />
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                className="
+                  w-full
+                  min-w-0
+                  rounded-xl
+                  border
+                  border-gray-300
+                  bg-transparent
+                  px-4
+                  py-3.5
+                  text-sm
+                  outline-none
+                  transition
+                  focus:border-violet-500
+                  sm:px-5
+                  sm:py-4
+                  sm:text-base
+                  dark:border-white/10
+                  dark:text-white
+                "
+              />
 
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Your Email"
-              className="
-                rounded-xl
-                border
-                border-gray-300
-                bg-transparent
-                px-5
-                py-4
-                outline-none
-                transition
-                focus:border-violet-500
-                dark:border-white/10
-                dark:text-white
-              "
-            />
+              {/* Email */}
 
-            <input
-              type="text"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              placeholder="Subject"
-              className="
-                rounded-xl
-                border
-                border-gray-300
-                bg-transparent
-                px-5
-                py-4
-                outline-none
-                transition
-                focus:border-violet-500
-                dark:border-white/10
-                dark:text-white
-              "
-            />
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                className="
+                  w-full
+                  min-w-0
+                  rounded-xl
+                  border
+                  border-gray-300
+                  bg-transparent
+                  px-4
+                  py-3.5
+                  text-sm
+                  outline-none
+                  transition
+                  focus:border-violet-500
+                  sm:px-5
+                  sm:py-4
+                  sm:text-base
+                  dark:border-white/10
+                  dark:text-white
+                "
+              />
 
-            <textarea
-              rows={6}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              className="
-                resize-none
-                rounded-xl
-                border
-                border-gray-300
-                bg-transparent
-                px-5
-                py-4
-                outline-none
-                transition
-                focus:border-violet-500
-                dark:border-white/10
-                dark:text-white
-              "
-            />
+              {/* Subject */}
 
-<button
-  type="submit"
-  disabled={loading}
-  className="
-    inline-flex
-    items-center
-    justify-center
-    gap-3
-    rounded-xl
-    bg-gradient-to-r
-    from-violet-600
-    to-cyan-500
-    px-8
-    py-4
-    font-semibold
-    text-white
-    shadow-lg
-    transition-all
-    duration-300
-    hover:scale-[1.02]
-    disabled:cursor-not-allowed
-    disabled:opacity-70
-  "
->
-  {loading ? (
-    <>
-      <Loader2 className="h-5 w-5 animate-spin" />
-      Sending...
-    </>
-  ) : (
-    <>
-      <Send size={20} />
-      Send Message
-    </>
-  )}
-</button>
+              <input
+                type="text"
+                name="subject"
+                value={form.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                className="
+                  w-full
+                  min-w-0
+                  rounded-xl
+                  border
+                  border-gray-300
+                  bg-transparent
+                  px-4
+                  py-3.5
+                  text-sm
+                  outline-none
+                  transition
+                  focus:border-violet-500
+                  sm:px-5
+                  sm:py-4
+                  sm:text-base
+                  dark:border-white/10
+                  dark:text-white
+                "
+              />
 
-          </div>
+              {/* Message */}
 
-        </motion.form>
+              <textarea
+                rows={6}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                className="
+                  w-full
+                  min-w-0
+                  resize-none
+                  rounded-xl
+                  border
+                  border-gray-300
+                  bg-transparent
+                  px-4
+                  py-3.5
+                  text-sm
+                  outline-none
+                  transition
+                  focus:border-violet-500
+                  sm:px-5
+                  sm:py-4
+                  sm:text-base
+                  dark:border-white/10
+                  dark:text-white
+                "
+              />
 
-      </div>
+              {/* Submit Button */}
 
-      {/* Bottom CTA */}
+              <button
+                type="submit"
+                disabled={loading}
+                className="
+                  inline-flex
+                  w-full
+                  items-center
+                  justify-center
+                  gap-3
+                  rounded-xl
+                  bg-gradient-to-r
+                  from-violet-600
+                  to-cyan-500
+                  px-6
+                  py-3.5
+                  text-sm
+                  font-semibold
+                  text-white
+                  shadow-lg
+                  transition-all
+                  duration-300
+                  hover:scale-[1.02]
+                  sm:px-8
+                  sm:py-4
+                  sm:text-base
+                  disabled:cursor-not-allowed
+                  disabled:opacity-70
+                "
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="h-5 w-5 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Send Message
+                  </>
+                )}
+              </button>
+            </div>
+          </motion.form>
+        </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="
-          mt-20
-          rounded-3xl
-          border
-          border-gray-200
-          bg-white
-          p-10
-          text-center
-          shadow-lg
-          transition-all
-          duration-300
-          dark:border-white/10
-          dark:bg-white/5
-          dark:shadow-none
-        "
-      >
-        <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-          Open to New Opportunities 🚀
-        </h3>
+        {/* ===========================
+            Bottom CTA
+        =========================== */}
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-          Whether you have a freelance project, internship,
-          full-time opportunity or simply want to connect,
-          I'd be happy to hear from you.
-          Let's build something amazing together.
-        </p>
-
-        <a
-          href="mailto:chakrabortyankur843@gmail.com"
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
           className="
-            mt-8
-            inline-flex
-            items-center
-            gap-3
-            rounded-full
-            bg-gradient-to-r
-            from-violet-600
-            to-cyan-500
-            px-8
-            py-4
-            font-semibold
-            text-white
+            mt-12
+            rounded-2xl
+            border
+            border-gray-200
+            bg-white
+            p-6
+            text-center
             shadow-lg
             transition-all
             duration-300
-            hover:scale-105
-            hover:shadow-violet-500/30
+            sm:mt-16
+            sm:rounded-3xl
+            sm:p-8
+            lg:mt-20
+            lg:p-10
+            dark:border-white/10
+            dark:bg-white/5
+            dark:shadow-none
           "
         >
-          <Mail size={20} />
-          Email Me
-        </a>
+          <h3
+            className="
+              text-2xl
+              font-bold
+              leading-tight
+              text-gray-900
+              sm:text-3xl
+              dark:text-white
+            "
+          >
+            Open to New Opportunities 🚀
+          </h3>
 
-      </motion.div>
+          <p
+            className="
+              mx-auto
+              mt-4
+              max-w-2xl
+              text-base
+              leading-7
+              text-gray-600
+              sm:mt-6
+              sm:text-lg
+              sm:leading-8
+              dark:text-gray-400
+            "
+          >
+            Whether you have a freelance project, internship,
+            full-time opportunity or simply want to connect,
+            I&apos;d be happy to hear from you.
+            Let&apos;s build something amazing together.
+          </p>
 
-    </div>
-
-  </section>
-);
+          <a
+            href="mailto:chakrabortyankur843@gmail.com"
+            className="
+              mt-6
+              inline-flex
+              w-full
+              items-center
+              justify-center
+              gap-3
+              rounded-full
+              bg-gradient-to-r
+              from-violet-600
+              to-cyan-500
+              px-6
+              py-3.5
+              font-semibold
+              text-white
+              shadow-lg
+              transition-all
+              duration-300
+              hover:scale-105
+              hover:shadow-violet-500/30
+              sm:mt-8
+              sm:w-auto
+              sm:px-8
+              sm:py-4
+            "
+          >
+            <Mail size={20} />
+            Email Me
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
 }

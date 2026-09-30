@@ -17,7 +17,36 @@ const experiences = [
       "TypeScript",
       "Material UI",
       "REST API",
+      "vite",
+      "Springboot",
+      "postgresql",
       "Git",
+      "Github",
+    ],
+  },
+  {
+    company: "Learnex education consultant",
+    role: "Business Development Executive",
+    duration: "2024 - 2025",
+    location: "Agartala, Tripura",
+    description:
+      "selling different technical course ",
+    technologies: [
+      "Excel",
+      "communication",
+    ],
+  },
+
+  {
+    company: "Movidu Technology",
+    role: "Business Development Executive",
+    duration: "2025",
+    location: "Agartala, Tripura",
+    description:
+      "selling different technical course ",
+    technologies: [
+      "Excel",
+      "communication",
     ],
   },
 
@@ -27,14 +56,23 @@ const experiences = [
     duration: "2026 - Present",
     location: "Remote",
     description:
-      "Building premium web applications including Portfolio, Weather Dashboard and Contractor Registration System using modern frontend technologies.",
+      "Building premium web applications including Portfolio e-commerce website and Kanun portal using modern frontend technologies.",
     technologies: [
       "Next.js",
       "Tailwind CSS",
       "Framer Motion",
       "React",
+      "vite",
+      "Vue",
+      "Springboot",
+      "mysql",
+      "mongodb",
+      "postgresql",
+      "Git",
+      "Github",
     ],
   },
+
 ];
 
 export default function Experience() {

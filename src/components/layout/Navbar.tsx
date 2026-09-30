@@ -67,7 +67,7 @@ export default function Navbar() {
             </h1>
 
             <p className="-mt-1 text-xs tracking-widest text-gray-600 dark:text-gray-400">
-              FRONTEND DEVELOPER
+              WEB DEVELOPER
             </p>
           </div>
         </Link>
@@ -151,7 +151,7 @@ export default function Navbar() {
             })}
 
             <a
-              href="/resume/ankurportfolio.pdf"
+              href="resume/ankurportfolio.pdf"
               download
               className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 px-5 py-3 font-semibold text-white transition-all duration-300 hover:scale-[1.02]"
             >

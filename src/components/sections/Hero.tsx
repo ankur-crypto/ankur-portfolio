@@ -24,6 +24,10 @@ const techStack = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "mysql",
+  "postgresql",
+  "springboot",
+  "mongodb",
 ];
 
 const stats = [
@@ -155,12 +159,8 @@ export default function Hero() {
               sequence={[
                 "Frontend Developer",
                 2000,
-                "React Developer",
-                2000,
-                "Next.js Developer",
-                2000,
-                "TypeScript Developer",
-                2000,
+                "Backend Developer",
+                2000
               ]}
               wrapper="h2"
               speed={50}
@@ -201,12 +201,12 @@ export default function Hero() {
               sm:leading-9
               "
             >
-              Passionate Frontend Developer specializing in{" "}
+              Passionate Web Developer specializing in{" "}
               <span className="font-semibold text-gray-900 dark:text-white">
-                React, Next.js, TypeScript and Tailwind CSS
+                React, Next.js, TypeScript, Tailwind CSS, vite, vue, git, github, postgresql, mysql
               </span>.
               I build modern, responsive and scalable web applications
-              with beautiful UI, clean code and exceptional user experience.
+              with beautiful UI, clean code and exceptional user experience also in API call and backend integration.
             </p>
 
             {/* Tech */}
@@ -539,7 +539,7 @@ export default function Hero() {
               </motion.div>
 
               {/* Profile */}
-                            <div
+              <div
                 className="
                 relative
                 h-[220px]

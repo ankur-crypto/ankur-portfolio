@@ -222,7 +222,7 @@ export default function Footer() {
             <div className="mt-6 flex gap-4">
 
               <a
-                href="https://github.com/YOUR_GITHUB_USERNAME"
+                href="https://github.com/ankur-crypto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -251,7 +251,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+                href="https://www.linkedin.com/in/ankur-chakraborty-777b21197?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -280,7 +280,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:your.email@gmail.com"
+                href="mailto:chakrabortyankur843@gmail.com"
                 className="
                   flex
                   h-12
@@ -322,30 +322,6 @@ export default function Footer() {
               </span>
               . All Rights Reserved.
             </p>
-
-            <Link
-              href="#home"
-              className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-full
-                bg-gradient-to-r
-                from-violet-600
-                to-cyan-500
-                text-white
-                shadow-lg
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:scale-110
-              "
-              aria-label="Back to top"
-            >
-              <ArrowUp size={20} />
-            </Link>
 
           </div>
 
