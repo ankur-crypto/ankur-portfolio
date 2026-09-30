@@ -447,32 +447,6 @@ export default function About() {
 
         {/* Bottom CTA */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mt-20 rounded-3xl border border-gray-200 bg-white p-10 text-center shadow-lg dark:border-white/10 dark:bg-white/5 dark:shadow-none"
-        >
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-            Let's Build Something Amazing Together 🚀
-          </h3>
-
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-            I'm currently looking for Frontend Developer opportunities where
-            I can contribute, learn and grow while building modern web
-            applications using React, Next.js and TypeScript.
-          </p>
-
-          <Link
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105"
-          >
-            Let's Connect
-            <ArrowRight size={18} />
-          </Link>
-        </motion.div>
-
       </div>
     </section>
   );
